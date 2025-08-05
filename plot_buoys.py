@@ -1,10 +1,14 @@
 import geopandas as gpd
-from matplotlib.offsetbox import AnchoredText
 import matplotlib.pyplot as plt
 import pandas as pd
+from matplotlib.offsetbox import AnchoredText
 
 
 def plot_buoy_data():
+    """
+    Plot buoy locations around the UK.
+    Saves output as buoys_plot.png
+    """
 
     north_atlantic = gpd.read_file("data/north_atlantic.geojson")
 
